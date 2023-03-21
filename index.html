@@ -1,2 +1,50 @@
-<p>我叫Ethan</p>
-<p>我的网站正在建设中... </p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ethan Xu</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Ethan Xu</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">主页</a></li>
+        <li><a href="#">研究方向</a></li>
+        <li><a href="#">项目列表</a></li>
+        <li><a href="#">发表论文</a></li>
+        <li><a href="#">联系我</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2>研究方向</h2>
+        <p>我主要的研究方向是基于深度学习的自主系统智能体</p>
+      </section>
+      <section>
+        <h2>发表论文</h2>
+        <ul>
+          <li>论文1</li>
+          <li>论文2</li>
+          <li>论文3</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023. Ethan Xu.</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
+
+
+<script type="text/javascript">
+  // 在控制台输出欢迎消息
+console.log("欢迎来到我的学术分享网站！");
+
+// 根据当前日期更新版权信息
+let year = new Date().getFullYear();
+let footerText = document.querySelector("footer p").textContent;
+document.querySelector("footer p").textContent = footerText.replace("2023", year);
+</script>
